@@ -114,3 +114,6 @@ div#resultado {
     margin: 10px;
 }
 
+.resultado {
+    display: flex;
+}

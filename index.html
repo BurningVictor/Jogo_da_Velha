@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
     <title>Document</title>
 </head>
 <body>
-    <section class="jdv x">
-        <div class="quads x" data-cell></div>
-        <div class="quads o" data-cell></div>
+    <section class="jdv">
+        <div class="quads" data-cell></div>
+        <div class="quads" data-cell></div>
         <div class="quads" data-cell></div>
         <div class="quads" data-cell></div>
         <div class="quads" data-cell></div>
@@ -21,9 +21,10 @@
         <div class="quads" data-cell></div>
     </section>
 
-    <div id="resultado" data-winning-message> 
-        <p>Resultado</p>
-        <button>Reiniciar</button>
+    <div id="resultado"  data-winning-message> 
+        <p class="resultado" data-winning-message-text></p>
+        <button id="btres">Reiniciar</button>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
