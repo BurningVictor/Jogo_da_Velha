@@ -1,6 +1,6 @@
 const quadradinhos = document.querySelectorAll('div.quads');
 const tabuleiro = document.querySelector('section');
-const divvenceu = document.querySelector('div#resultado');
+const divvenceu = document.querySelector('div.resultado');
 const msgvenceu = document.querySelector('p.resultado');
 const btrestart = document.querySelector('button#btres');
 let vezo; // ------> Vez do Círculo
@@ -26,7 +26,7 @@ const startGame = () => {
     };
 
     hoverTransp();
-    msgvenceu.classList.remove('msg-vencedor');
+    divvenceu.classList.remove('msg-vencedor');
 };
 
 // - Terminar Jogo
@@ -37,10 +37,10 @@ const endGame = (combiguais) => {
     }
     // Se houver Vitória:
     else {
-        msgvenceu.innerHTML = vezo ? 'X Venceu!!!' : 'O Venceu!!!';
+        msgvenceu.innerHTML = vezo ? 'O Venceu!!!' : 'X Venceu!!!';
     }
     // Vai adicionar uma classe que irá dar Display Flex na Div Venceu.
-    msgvenceu.classList.add('msg-vencedor');
+    divvenceu.classList.add('msg-vencedor');
 };
 
 // Verificações -----------------------------------------------------------
