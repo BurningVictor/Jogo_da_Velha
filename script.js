@@ -3,7 +3,6 @@ const tabuleiro = document.querySelector('section');
 const divvenceu = document.querySelector('div.resultado');
 const msgvenceu = document.querySelector('p.resultado');
 const btrestart = document.querySelector('button#btres');
-let vezo; // ------> Vez do Círculo
 const combsvitoria = [
     [0,1,2],
     [3,4,5],
@@ -14,6 +13,7 @@ const combsvitoria = [
     [1,4,7],
     [2,5,8],
 ];
+let vezo; // ------> Vez do Círculo
 
 // - Começar Jogo
 const startGame = () => {
